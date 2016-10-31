@@ -1,6 +1,6 @@
 <?php
 include ("scripts/dbconnect.php");
-include ("scripts/header.php");
+include ("scripts/header_l2.php");
 $articleID = $params['blogID'];
 echo "
 <main>
