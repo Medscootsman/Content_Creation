@@ -7,6 +7,7 @@ session_start();
     <meta charset="UTF-8">
     <title>The Blog of Charles Babbage</title>
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
 <header>
