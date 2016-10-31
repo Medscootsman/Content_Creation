@@ -28,7 +28,7 @@ h1, h2
 /* HEADER */
 header
 {
-    background-color: darkblue;
+    background-color: darkorange;
 ;
     padding-top: 14px
 ;
@@ -42,7 +42,7 @@ header
 /* MAIN */
 main
 {
-    background-color: orange;
+    background-color: darkcyan;
 ;
     min-height: 300px
 ;
@@ -52,7 +52,7 @@ main
 /* FOOTER */
 footer
 {
-    background-color: gray;
+    background-color: black;
 ;
     padding:
             5px 0 5px 10px
