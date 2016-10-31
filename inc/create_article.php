@@ -12,7 +12,7 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
                 <input type="text" name="articleName" placeholder="Article Name">
                 <textarea name="articleText"></textarea>
                 <label>Category</label>
-                <select>
+                <select name="category">
                     <option value= "creepy stories"creepy stories </option>
                     <option value ="Life update" Life Update </option>
                     <option value = "recommendations" recommendations </option>
@@ -30,8 +30,9 @@ if (isset($_SESSION['username'])) //SESSION DOES EXIST
         $articleName = $_POST["articleName"];
         $articleText = $_POST["articleText"];
         $articleAuthor = $_SESSION['username'];
+        $articleCategory = $_SESSION['category'];
         $sql = "INSERT INTO blogArticles (articleID, articleName, articleText,
-articleAuthor) VALUES ('". $articleID ."', '" .$articleName."', '".$articleText."',
+articleAuthor, category) VALUES ('". $articleID ."', '" .$articleName."', '".$articleText."',
 '".$articleAuthor."')";
         if (mysqli_query($db, $sql)) {
         } else {

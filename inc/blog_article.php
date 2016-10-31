@@ -13,10 +13,12 @@ while($row = $result->fetch_array())
     $articleName = $row['articleName'];
     $articleAuthor = $row['articleAuthor'];
     $articleText = $row['articleText'];
+    $articleCategory = $row['category'];
     echo "
 <atricle>
  <h2>{$articleName}</h2>
  <h3>by {$articleAuthor}</h3>
+ <h4> category: {$articleCategory} {</h4>
  {$articleText}
  </atricle>";
 }
@@ -24,4 +26,4 @@ echo "
 </main>
 ";
 include ("scripts/footer.php");
-?>
+?>s
