@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     function checklogin($username, $password, $db)
     {
         $sql = "SELECT * FROM users WHERE username='" . $username . "' and
-password='" . $password . "'";
+        password='" . $password . "'";
         $result = $db->query($sql);
         while ($row = $result->fetch_array()) {
             return true;
@@ -28,7 +28,7 @@ password='" . $password . "'";
     if (checklogin($username, $password, $db)) {
         session_start();
         $_SESSION['username'] = $username;
-        header("location:./");
+        header("location:index");
     } else {
         header("location:login");
     }
